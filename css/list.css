@@ -1,0 +1,68 @@
+
+div#ires ol{
+	display:block;
+	list-style: none;
+	max-width: 100%;
+
+}
+div#ires ol li a{
+	text-decoration: none;
+}
+
+
+div#ires ol li{
+	font-family:Comic Sans MS,arial,helvetica,sans-serif;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom:1%; 
+	max-height: 100%;
+	-moz-box-shadow: 0px 0px 10px #000000;
+	-webkit-box-shadow: 0px 0px 10px #000000;
+	box-shadow: 2px 2px 10px #77807f;
+
+	transition:All 0.8s ease;
+	-webkit-transition:All 0.5s ease-out;
+	-moz-transition:All 0.5s ease-out;
+	-o-transition:All 0.5s ease-out;
+	transform: rotate(0deg) scale(1) skew(0deg) translate(10px);
+	-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(10px);
+	-moz-transform: rotate(0deg) scale(1) skew(0deg) translate(10px);
+	-o-transform: rotate(0deg) scale(1) skew(0deg) translate(10px);
+	-ms-transform: rotate(0deg) scale(1) skew(0deg) translate(10px);
+
+}
+div#ires ol li:hover{
+	transform: rotate(0deg) scale(1) skew(0deg) translate(-10px);
+	-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px);
+	-moz-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px);
+	-o-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px);
+	-ms-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px);
+
+}
+div#ires .pic {
+	float:left;
+    
+	position:relative;
+	left:40%;
+	//top:10%;
+	//bottom: 30%;
+}
+
+div#ires .r a{
+    width: 80%;
+	//font-family:Comic Sans MS,arial,helvetica,sans-serif;
+    color:#656c78;
+}
+div#ires .r a:hover{
+
+	//font-family:Comic Sans MS,arial,helvetica,sans-serif;
+    //color:#656c78;
+    color:#5AA0E6;
+	-o-transition: color .20s ease-out;
+	-webkit-transition: color .20s ease-out;
+	-moz-transition: color .20s ease-out;
+	transition:  color .20s ease-out;
+}
+
+
