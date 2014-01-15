@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Search Horizon Alpha</title>
+  <title>Search Horizon Beta</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="multiple platform search tool plugin backup social network application">
   <meta name="author" content="Leon Lin">
@@ -18,6 +18,7 @@
 
 	<!-- flexslider css -->
 	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/list.css" type="text/css" media="screen" />
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -32,8 +33,19 @@
    
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- xmas snow -->
+	<script type="text/javascript" src="js/jquery.snow.min.1.0.js"></script>
+	<script src="js/spin.js"></script>
+	<script src="js/search.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
-
+	<?php
+		if(isset($_GET['keyword']))
+		{
+			echo "<script type=\"text/javascript\">data_fetch(\"".$_GET['keyword']."\");</script>";
+		}
+		else
+			echo "<script type=\"text/javascript\">data_fetch(\"\");</script>";
+	?>
 	<style class="konami">
 
 	</style>
@@ -48,7 +60,7 @@
 		</div>
 		<div class="col-md-8 column">
 			<div class="page-header">
-				<h1>Search Horizon Alpha</h1>
+				<h1>Search Horizon Beta</h1>
 				<img src="img/app_goal.png" alt="Make search more efficient!!"  class="img-responsive">
 			</div>
 		</div>
@@ -106,6 +118,150 @@
 		</div>
 	</div>
 	<div class="row clearfix">
+		<div class="col-md-12 column">
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+		</div>
+	</div>
+	<div class="wait" style="position:relative;left:50%; height:10%; display:block;"></div>
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+		   <div class="col-md-12">
+		   		<div class="upgrade">
+			    	<i class="fa fa-bookmark"></i>
+				    <span>Level Up</span><i class="fa fa-level-up"></i>
+				    <p>upgrade with <i class="fa fa-facebook-square"></i></p>
+				</div>
+		   </div>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="tabbable" id="tabs-663924">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#panel-advanced" data-toggle="tab">DashBoard</a>
+					</li>
+					<li>
+						<a href="#panel-plurk" data-toggle="tab">Plurk</a>
+					</li>
+					<li>
+						<a href="#panel-twitter" data-toggle="tab">Twitter</a>
+					</li>
+					<li>
+						<a href="#panel-facebook" data-toggle="tab">Facebook</a>
+					</li>
+					<li>
+						<a href="#panel-googleplus" data-toggle="tab">Google+</a>
+					</li>
+					<li>
+						<a href="#panel-configuration" data-toggle="tab"><i class="fa fa-cogs"></i>Configs</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="panel-advanced">
+					</div>
+					<div class="tab-pane" id="panel-plurk">
+					</div>
+					<div class="tab-pane" id="panel-twitter">
+					</div>
+					<div class="tab-pane" id="panel-facebook">
+					</div>
+					<div class="tab-pane" id="panel-googleplus">
+					</div>
+					<div class="tab-pane" id="panel-configuration">
+					</div>
+				 <script src="js/detectBrowser.js"></script>
+					 <script src="js/configs.js"></script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="alert alert-dismissable alert-info">
+		  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+	      <h4>Secret Tip:</h4>
+	      <p>type with arrow key:<br>
+	      	↑ ↓ ← → B A</p>
+	    </div>
+	</footer>
+</div>
+
+  <!-- Syntax Highlighter -->
+  <script type="text/javascript" src="js/shCore.js"></script>
+  <script type="text/javascript" src="js/shBrushXml.js"></script>
+  <script type="text/javascript" src="js/shBrushJScript.js"></script>
+
+  <!-- Optional FlexSlider Additions -->
+  <script src="js/jquery.easing.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+
+<div class="konami developer-pane" data-effeckt-page="developer-page">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="jumbotron">
+				<h1>
+					Search Horizon Team Member
+				</h1>
+				<p>
+					Four junior undergraduates majoring in 
+					department of Computer Science - University of Taipei 
+				</p>
+				<p>
+					<a class="btn btn-primary btn-large konami" href="#">Return</a>
+				</p>
+			</div>
+			<div class="row clearfix">
+				<div class="col-md-3 column">
+					<img alt="140x140" src="img/10016001.jpg" class="img-rounded" />
+				</div>
+				<div class="col-md-3 column">
+					<img alt="140x140" src="img/10016022.jpg" class="img-rounded" />
+				</div>
+				<div class="col-md-3 column">
+					<img alt="140x140" src="img/10016024.jpg" class="img-rounded" />
+				</div>
+				<div class="col-md-3 column">
+					<img alt="140x140" src="img/10016026.jpg" class="img-rounded" />
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="col-md-4 column">
+					<a class="thumbnail" title="presentation checkpoint 1" href="https://dl.dropboxusercontent.com/u/36926980/presentation2/index.html" target="_blank">Presentation 1
+					<br><br><img class="img-responsive" src="img/pre1.png"></a>
+				</div>
+				<div class="col-md-4 column">
+					<a class="thumbnail" title="presentation checkpoint 3" href="SearHorizon.htm" target="_blank">Presentation 3
+					<br><br><img class="img-responsive" src="img/pre3.png"></a>
+				</div>
+				<div class="col-md-4 column">
+					<a class="thumbnail" title="Celebration" href="https://dl.dropboxusercontent.com/u/36926980/celebration/index.html" target="_blank">Celebration
+					<br><br><img class="img-responsive" src="img/la3.jpg"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-8 column">
+				<div class="jumbotron">
+					<h1>
+						Google Extension Alpha
+					</h1>
+					<p>
+						Stable version<br>
+						1. download and extract file<br>
+						2. in chrome to url: chrome://extensions<br>
+						3. choose developer mode in checkbox<br>
+						4. import unpackage extensions & choose file directory
+					</p>
+					<p>
+						<a class="btn btn-primary btn-large extension-download" href="https://dl.dropboxusercontent.com/u/36926980/presentation2/contextMenuOnChrome.crx" target="_blank">download</a>
+					</p>
+				</div>
+		</div>
+			<div class="row clearfix">
 			<div class="col-md-6 column">
 				<div class="alert alert-dismissable alert-info">
 				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
@@ -151,413 +307,8 @@
 										</p>
 					</div>
 			</div>
-			<div class="col-md-6 column">
-				<section class="slider">
-			        <div class="flexslider">
-			          <ul class="slides">
-			            <li>
-			  	    	    <img src="img/app_icon.png" />
-			  	    		</li>
-			  	    		<li>
-			  	    	    <img src="img/fav_intro.png" />
-			  	    		</li>
-			  	    		<li>
-			  	    	    <img src="img/intro1.png" />
-			  	    		</li>
-			  	    		<li>
-			  	    	    <img src="img/intro2.png" />
-			  	    		</li>
-			          </ul>
-			        </div>
-			      </section>
-			    <div class="upgrade">
-			    	<i class="fa fa-bookmark"></i>
-				    <span>Level Up</span><i class="fa fa-level-up"></i>
-				    <p>upgrade with <i class="fa fa-facebook-square"></i></p>
-				</div>
-			</div>
-		</div>
-	<div class="row clearfix">
-		<div class="col-md-12 column">
 		</div>
 	</div>
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-		</div>
-	</div>
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-		</div>
-	</div>
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-		</div>
-	</div>
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<div class="tabbable" id="tabs-663924">
-				<ul class="nav nav-tabs">
-					<li class="active">
-						<a href="#panel-plurk" data-toggle="tab">Plurk</a>
-					</li>
-					<li>
-						<a href="#panel-twitter" data-toggle="tab">Twitter</a>
-					</li>
-					<li>
-						<a href="#panel-facebook" data-toggle="tab">Facebook</a>
-					</li>
-					<li>
-						<a href="#panel-googleplus" data-toggle="tab">Google+</a>
-					</li>
-					<li>
-						<a href="#panel-configuration" data-toggle="tab"><i class="fa fa-cogs"></i>Configs</a>
-					</li>
-				</ul>
-				<div class="tab-content">
-					<div class="tab-pane active" id="panel-plurk">
-						<p>
-							<?php
-								/**/
-						        if(isset($_GET["keyword"]))
-						        {
-						                $key=$_GET["keyword"];
-						                $key=str_replace(" ","+",$key);
-						        }
-						        else
-						                $key="";
-						        // if(isset($_GET["site"]))
-						        // {
-						        //         $site="site:".$_GET["site"];
-						        // }
-						        // else
-						                $site="site:www.plurk.com";
-						        $ch = curl_init();
-						        $options = array(CURLOPT_URL =>
-						        'www.google.com/search?q='.$key."+".$site,
-						        CURLOPT_HEADER => false,
-						        CURLOPT_RETURNTRANSFER => true,
-						        CURLOPT_USERAGENT => "Google Bot",
-						        CURLOPT_FOLLOWLOCATION => true
-						        );
-						        curl_setopt_array($ch, $options);
-						        $output = curl_exec($ch);
-						        curl_close($ch);
-
-						        $doc= new DOMDocument();
-						        libxml_use_internal_errors(TRUE);
-						        $doc->loadHTML($output);
-						        libxml_clear_errors();
-
-						        $list=$doc->getElementById("ires")->getElementsByTagName("a");
-
-						        $links=$doc->getElementsByTagName("cite");
-						        $index=0;
-						        foreach( $list as $node)
-						        {
-						        	if($node->textContent ==="Cached")
-						        	{
-						        		continue;
-						        	}
-						        	else if($node->textContent ==="Similar")
-						        	{
-						        		continue;
-						        	}
-						        	else
-						        	{
-							        	$link=$links->item($index);
-							        	//echo "<li>".$node->textContent."</li>"; //debug
-							        	if($link->textContent)
-							        	{
-							        		$node->setAttribute("href","http://".$link->textContent);
-							        	}
-							        	else
-							        		;
-							        	$index++;
-						        	}
-						        }
-						        echo $doc->saveHTML($doc->getElementById("ires"));
-						        //echo $output;
-						        /**/
-							?>
-						</p>
-					</div>
-					<div class="tab-pane" id="panel-twitter">
-						<p>
-							<?php
-								/**/
-						        if(isset($_GET["keyword"]))
-						        {
-						                $key=$_GET["keyword"];
-						                $key=str_replace(" ","+",$key);
-						        }
-						        else
-						                ;
-						        $site="site:twitter.com";
-						        $ch = curl_init();
-						        $options = array(CURLOPT_URL =>
-						        'www.google.com/search?q='.$key."+".$site,
-						        CURLOPT_HEADER => false,
-						        CURLOPT_RETURNTRANSFER => true,
-						        CURLOPT_USERAGENT => "Google Bot",
-						        CURLOPT_FOLLOWLOCATION => true
-						        );
-						        curl_setopt_array($ch, $options);
-						        $output = curl_exec($ch);
-						        curl_close($ch);
-
-						        $doc= new DOMDocument();
-						      	libxml_use_internal_errors(TRUE);
-						        $doc->loadHTML($output);
-						        libxml_clear_errors();
-						        
-						        $list=$doc->getElementById("ires")->getElementsByTagName("a");
-
-						        $links=$doc->getElementsByTagName("cite");
-						        $index=0;
-						        foreach( $list as $node)
-						        {
-						        	if($node->textContent === "Cached")
-						        	{
-						        		continue;
-						        	}
-						        	else if($node->textContent ==="Similar")
-						        	{
-						        		continue;
-						        	}
-						        	else
-						        	{
-							        	$link=$links->item($index);
-							        	if($link->textContent)
-							        		$node->setAttribute("href",$link->textContent);
-							        	else
-											;
-							        	$index++;
-						        	}
-						        }
-						        echo $doc->saveHTML($doc->getElementById("ires"));
-						        /**/
-							?>
-						</p>
-					</div>
-					<div class="tab-pane" id="panel-facebook">
-						<p>
-							<?php
-								/**/
-						        if(isset($_GET["keyword"]))
-						        {
-						                $key=$_GET["keyword"];
-						                $key=str_replace(" ","+",$key);
-						        }
-						        else
-						                ;
-						        $site="site:www.facebook.com";
-						        $ch = curl_init();
-						        $options = array(CURLOPT_URL =>
-						        'www.google.com/search?q='.$key."+".$site,
-						        CURLOPT_HEADER => false,
-						        CURLOPT_RETURNTRANSFER => true,
-						        CURLOPT_USERAGENT => "Google Bot",
-						        CURLOPT_FOLLOWLOCATION => true
-						        );
-						        curl_setopt_array($ch, $options);
-						        $output = curl_exec($ch);
-						        curl_close($ch);
-
-						        $doc= new DOMDocument();
-						      	libxml_use_internal_errors(TRUE);
-						        $doc->loadHTML($output);
-						        libxml_clear_errors();
-						        
-						        $list=$doc->getElementById("ires")->getElementsByTagName("a");
-
-						        $links=$doc->getElementsByTagName("cite");
-						        $index=0;
-						        foreach( $list as $node)
-						        {
-						        	if($node->textContent === "Cached")
-						        	{
-						        		continue;
-						        	}
-						        	else if($node->textContent ==="Similar")
-						        	{
-						        		continue;
-						        	}
-						        	else
-						        	{
-							        	$link=$links->item($index);
-							        	if($link->textContent)
-							        		$node->setAttribute("href",$link->textContent);
-							        	else
-											;
-							        	$index++;
-						        	}
-						        }
-						        echo $doc->saveHTML($doc->getElementById("ires"));
-						        /**/
-							?>
-						</p>
-					</div>
-					<div class="tab-pane" id="panel-googleplus">
-						<p>
-							<?php
-								/**/
-						        if(isset($_GET["keyword"]))
-						        {
-						                $key=$_GET["keyword"];
-						                $key=str_replace(" ","+",$key);
-						        }
-						        else
-						                ;
-						        $site="site:plus.google.com";
-						        $ch = curl_init();
-						        $options = array(CURLOPT_URL =>
-						        'www.google.com/search?q='.$key."+".$site,
-						        CURLOPT_HEADER => false,
-						        CURLOPT_RETURNTRANSFER => true,
-						        CURLOPT_USERAGENT => "Google Bot",
-						        CURLOPT_FOLLOWLOCATION => true
-						        );
-						        curl_setopt_array($ch, $options);
-						        $output = curl_exec($ch);
-						        curl_close($ch);
-
-						        $doc= new DOMDocument();
-						      	libxml_use_internal_errors(TRUE);
-						        $doc->loadHTML($output);
-						        libxml_clear_errors();
-						        
-						        $list=$doc->getElementById("ires")->getElementsByTagName("a");
-
-						        $links=$doc->getElementsByTagName("cite");
-						        $index=0;
-						        foreach( $list as $node)
-						        {
-						        	if($node->textContent === "Cached")
-						        	{
-						        		continue;
-						        	}
-						        	else if($node->textContent ==="Similar")
-						        	{
-						        		continue;
-						        	}
-						        	else
-						        	{
-							        	$link=$links->item($index);
-							        	if($link->textContent)
-							        		$node->setAttribute("href",$link->textContent);
-							        	else
-											;
-							        	$index++;
-						        	}
-						        }
-						        echo $doc->saveHTML($doc->getElementById("ires"));
-						        /**/
-							?>
-						</p>
-					</div>
-					<div class="tab-pane" id="panel-configuration">
-					</div>
-				 <script src="js/detectBrowser.js"></script>
-					 <script src="js/configs.js"></script>
-				</div>
-			</div>
-		</div>
-	</div>
-	<footer>
-		<div class="alert alert-dismissable alert-info">
-		  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-	      <h4>Secret Tip:</h4>
-	      <p>type with arrow key:<br>
-	      	↑ ↓ ← → B A</p>
-	    </div>
-	</footer>
-</div>
-  <!-- FlexSlider -->
-  <script defer src="js/jquery.flexslider.js"></script>
-
-  <script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
-
-
-  <!-- Syntax Highlighter -->
-  <script type="text/javascript" src="js/shCore.js"></script>
-  <script type="text/javascript" src="js/shBrushXml.js"></script>
-  <script type="text/javascript" src="js/shBrushJScript.js"></script>
-
-  <!-- Optional FlexSlider Additions -->
-  <script src="js/jquery.easing.js"></script>
-  <script src="js/jquery.mousewheel.js"></script>
-
-<div class="konami developer-pane" data-effeckt-page="developer-page">
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<div class="jumbotron">
-				<h1>
-					Search Horizon Team Member
-				</h1>
-				<p>
-					Four junior undergraduates majoring in 
-					department of Computer Science - University of Taipei 
-				</p>
-				<p>
-					<a class="btn btn-primary btn-large konami" href="#">Return</a>
-				</p>
-			</div>
-			<div class="row clearfix">
-				<div class="col-md-3 column">
-					<img alt="140x140" src="img/10016001.jpg" class="img-rounded" />
-				</div>
-				<div class="col-md-3 column">
-					<img alt="140x140" src="img/10016022.jpg" class="img-rounded" />
-				</div>
-				<div class="col-md-3 column">
-					<img alt="140x140" src="img/10016024.jpg" class="img-rounded" />
-				</div>
-				<div class="col-md-3 column">
-					<img alt="140x140" src="img/10016026.jpg" class="img-rounded" />
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="advance_search upgrade_page" data-effeckt-page="upgrade-page">
-<div id="my-profile" class="row">
-   <div class="col-md-3">
-       <!-- Profile Picture -->
-       <img id="my-profile-picture" class="img-thumbnail" src="" alt="">
-   </div>
-   <div class="col-md-9">
-       <!-- Profile Information -->
-       <dl class="dl-horizontal">
-           <dt>Name</dt>
-           <dd id="my-profile-name"></dd>
-       </dl>
-       <dl class="dl-horizontal">
-           <dt>Gender</dt>
-           <dd id="my-profile-gender"></dd>
-       </dl>
-       <dl class="dl-horizontal">
-           <dt>Username</dt>
-           <dd id="my-profile-username"></dd>
-       </dl>
-       <dl class="dl-horizontal">
-           <dt>Facebook ID</dt>
-           <dd id="my-profile-facebook-id"></dd>
-       </dl>
-       <button id="upgrade_return" class="btn btn-primary">Return</button>
-   </div>
-</div>
 </div>
 </body>
 </html>
